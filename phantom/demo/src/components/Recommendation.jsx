@@ -47,11 +47,11 @@ const Recommendation = () => {
     updateAllocationData({ finalResults: results });
 
     // Navigate to output page
-    navigate("/output");
+    navigate("output");
   };
 
   const handleBack = () => {
-    navigate("/configuration");
+    navigate("configuration");
   };
 
   // Calculate preview values

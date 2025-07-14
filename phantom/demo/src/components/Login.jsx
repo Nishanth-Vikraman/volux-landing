@@ -19,7 +19,7 @@ const Login = () => {
     try {
       const success = await login(email, password);
       if (success) {
-        navigate('/configuration');
+        navigate('configuration');
       } else {
         setError('Invalid credentials. Please try again.');
       }
