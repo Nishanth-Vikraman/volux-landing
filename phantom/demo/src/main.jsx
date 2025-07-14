@@ -6,7 +6,7 @@ import './index.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename="/phantom/demo-deploy"> {/* ✅ fix for GitHub Pages path */}
+    <BrowserRouter basename="/"> {/* ✅ fix for GitHub Pages path */}
       <App />
     </BrowserRouter>
   </StrictMode>
