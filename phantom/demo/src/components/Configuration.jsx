@@ -53,19 +53,19 @@ const Configuration = () => {
   };
 
   const handleGetRecommendation = () => {
-    navigate('recommendation'); // ✅ relative route inside basename
+    navigate('/recommendation'); // ✅ relative route inside basename
   };
 
   const handleGetOutput = () => {
     // Calculate phantom allocation with current data
     const results = calculatePhantomAllocation();
     updateAllocationData({ finalResults: results });
-    navigate('output'); // ✅ relative route inside basename
+    navigate('/output'); // ✅ relative route inside basename
   };
 
   const handleLogout = () => {
     logout();
-    navigate('');
+    navigate('/');
   };
 
   const totalExpectedPayout = localGrades.reduce((sum, grade) => 
