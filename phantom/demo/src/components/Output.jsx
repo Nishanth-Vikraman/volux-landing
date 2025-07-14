@@ -22,12 +22,12 @@ const Output = () => {
   const results = allocationData.finalResults;
   
   if (!results) {
-    navigate('configuration');
+    navigate('/configuration');
     return null;
   }
 
   const handleEditConfiguration = () => {
-    navigate('configuration');
+    navigate('/configuration');
   };
 
   const handleInitiatePayout = () => {
@@ -36,7 +36,7 @@ const Output = () => {
 
   const handleReconfigure = () => {
     resetData();
-    navigate('configuration');
+    navigate('/configuration');
   };
 
   const handleDownloadSummary = () => {
